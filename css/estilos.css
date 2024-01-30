@@ -141,6 +141,8 @@ color: white;
     color: black;
     text-decoration: underline;
     color: black;
+    text-align:right;
+    
 }
 
 .icono:hover {
@@ -171,7 +173,7 @@ color: white;
         font-size: 2.8em;
         font-weight: 200;
         text-align: center;
-        margin-top: 1%;
+        margin-top: 10%;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke: 0.8px;
     }
@@ -184,7 +186,7 @@ color: white;
     }
     .footer {
         grid-area: footer;
-       margin-right: 55%;
+     
     }
     .contenedor  { grid-template-columns: 1fr;
         grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1fr;
@@ -197,9 +199,21 @@ color: white;
         "side-area2"
         "footer";
 }
+.icono{
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+    color: black;
+    text-align: left;
 
+}
 
-
+h3 {
+    font-family: miFuente3;
+    font-size: 1.2em;
+    font-weight: 200;
+    margin-left: 40%;
+}
 }
 
 
@@ -212,4 +226,5 @@ color: white;
     animation: cursorAnim .5s infinite alternate;
     pointer-events: none;
 }
+
 
