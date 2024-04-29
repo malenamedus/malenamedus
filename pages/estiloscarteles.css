@@ -1,0 +1,1115 @@
+@font-face {
+    font-family: miFuente ;
+    src: url(../fuente/Gambetta-Italic.otf);
+    font-weight: 200;
+    font-size: large;
+ 
+} 
+
+@font-face {
+    font-family: miFuente2 ;
+    src: url(../fuente/Gambetta-Regular.otf);
+    font-weight: 100;
+} 
+
+@font-face {
+    font-family: miFuente3 ;
+    src: url(../fuente/Gambetta-Light.otf);
+    font-weight: 100;
+} 
+
+@font-face {
+    font-family: mifuente4;
+    src: url(../fuente/Gambetta-Medium.otf);
+}
+@font-face {
+    font-family: miFuente5 ;
+    src: url(../fuente/Gambetta-LightItalic.otf);
+    font-weight: 100;
+} 
+*{
+    box-sizing: border-box;
+}
+
+.body {
+    margin: 0;
+    height: 100vh;
+    background-color: #fafaf5;
+    position: relative;
+    min-height: 100vh;
+}
+
+a:link{ text-decoration: none;}
+
+header { 
+    grid-area: header;
+    display: flex;
+    position: sticky;
+    top: 1.5%;
+    margin-top: 0%;
+    height: 90%;
+    width: 100%;
+    padding: 2px 2px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1.5%;
+    z-index:100;
+  /* background-color: red; */
+    
+    
+    } 
+    header nav{
+     word-spacing: 40px;
+     margin-right: 4%;
+     -webkit-text-fill-color: transparent;
+     -webkit-text-stroke: 0.8px;
+     
+    
+    }
+    header nav a {
+        text-decoration: none;
+        margin-top: 5%;
+    -webkit-text-fill-color:#fafaf5 ;
+        -webkit-text-stroke: 0.8px;
+        -webkit-text-stroke-color: black;
+      
+    
+    }
+    
+    .logo {
+
+        text-decoration: none;
+        -webkit-text-fill-color: #fafaf5;
+        -webkit-text-stroke: 0.8px;
+        -webkit-text-stroke-color: black;
+    
+
+    }
+    .logo:hover{
+ 
+
+        -webkit-text-fill-color: rgba(255, 255, 104, 0.801) ;
+        -webkit-text-stroke: 0.8px;
+        -webkit-text-stroke-color: black;
+        text-decoration: none;
+    
+    }
+    .logocorto {
+ 
+        text-decoration: none;
+        -webkit-text-fill-color: #fafaf5;
+        -webkit-text-stroke: 0.8px;
+        -webkit-text-stroke-color: black;
+        display: none;
+    
+    
+    }
+    .logocorto:hover {
+ 
+        -webkit-text-fill-color: rgba(255, 255, 104, 0.801) ;
+        -webkit-text-stroke: 0.8px;
+        -webkit-text-stroke-color: black;
+        text-decoration: none;
+    
+    
+    }
+    
+    h1 {
+       
+        font-family: miFuente;
+        font-size: 3em;
+        font-weight: 200;
+    
+       
+        -webkit-text-fill-color:#fafaf5 ;
+        -webkit-text-stroke: 0.8px;
+        -webkit-text-stroke-color: black;
+    }
+
+.contenedor{
+display:grid;
+grid-template-areas: 
+"header header header header"
+"side-area main mainuno side-area2"
+"side-area main2 maindos side-area2"
+"side-area main3 maintres side-area2"
+"side-area main4 maincuatro side-area2"
+"footer footer footer footer ";
+grid-gap: 0.2rem;
+grid-template-rows: 70px 800px 500px 800px 800px 0px;
+grid-template-columns: 0px 2fr 1fr 30px;
+
+}
+
+
+    
+
+
+.main{
+    grid-area: main;
+    /* background-color: blue; */
+
+}
+.mainuno{
+    grid-area: maindos;
+   margin-top: -168%;
+ /* background-color: blue; */
+}
+
+
+.main2{
+    grid-area: main2;
+    /* background-color: aqua;   
+     */
+}
+
+.maindos{
+    grid-area: maindos;
+    /* background-color: red; */
+    margin-top: 21%
+
+}
+
+.main3{
+    grid-area: main3;
+    /* background-color: aqua;    */
+
+    /* background-color: yellow; */
+}
+
+.maintres{
+    grid-area: maintres;
+    /* background-color: red; */
+    margin-top: 53%
+
+}
+
+.main4{
+    grid-area: main4;
+    /* background-color: aqua;    */
+ 
+}
+.maincuatro{
+    grid-area: maincuatro;
+    /* background-color: red; */
+    margin-top: 85%
+}
+
+
+.carousel {
+    width: 95%;
+    height: 85%;
+    justify-content: center;
+ 
+    position: relative;
+    overflow: clip;
+    margin-top: -5%;
+
+    box-sizing: border-box;
+
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    /* background-color: red; */
+
+
+}
+
+.carousel img {
+
+position:absolute;
+top: 0;
+left: 0;
+
+object-fit: containt !important;
+max-width: 100%;
+height: auto;
+
+
+}
+.carousel button {
+
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size: 32px;
+    cursor: pointer;
+   
+
+    
+    }
+
+    .carousel .prev {
+        left: 10px;
+        
+      
+
+      }
+      .carousel .next {
+        right: 10px;
+
+      }
+      .carousel .prev:hover {
+        left:10px;
+        color: #f5f558;
+
+      }
+      .carousel .next:hover {
+        right: 10px;
+        color: #f5f558;
+      }
+
+
+
+
+
+.carousel2 {
+    max-width: 95%;
+    height: 90%;
+    justify-content: center;
+    position: relative;
+    overflow: clip;
+    margin-top: 10%;
+    margin-left: 0%;
+    box-sizing: border-box;
+    border: 10px;
+    border-color: red;
+
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    /* background-color: red; */
+
+}
+.carousel2 img {
+
+    position:absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    height: auto;
+    
+    
+    }
+    .carousel2 button {
+    
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: transparent;
+        border: none;
+        color: red;
+        font-size: 32px;
+        cursor: pointer;
+       
+        
+        }
+    
+        .carousel2 .prev2 {
+            left:10px;
+    
+          }
+          .carousel2 .next2 {
+            right: 10px;
+          }
+          .carousel2 .prev2:hover {
+            left:10px;
+            color: yellow;
+    
+          }
+          .carousel2 .next2:hover {
+            right: 10px;
+            color: yellow;
+          }
+    
+
+
+
+.carousel4 {
+    width: 95%;
+    height: 90%;
+    margin-top: 25%;
+    margin-left: 0%;
+    justify-content: center;
+    position: relative;
+    overflow: clip;
+    box-sizing: border-box;
+  
+   
+
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    /* background-color: red; */
+
+}
+.carousel4 img {
+
+    position:absolute;
+   
+    
+    max-width: 100%;
+    height: auto;
+    
+    
+    }
+    .carousel4 button {
+    
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: transparent;
+        border: none;
+        color: red;
+        font-size: 32px;
+        cursor: pointer;
+        width: 1%;
+        
+        }
+    
+        .carousel4 .prev4 {
+            left:10px;
+    
+          }
+          .carousel4 .next4 {
+            right: 30px;
+          }
+          .carousel4 .prev4:hover {
+            left:10px;
+            color: yellow;
+    
+          }
+          .carousel4 .next4:hover {
+            right: 30px;
+            color: yellow;
+          }
+    
+    .carousel3 {
+            width: 95%;
+            height: 90%;
+            justify-content: center;
+            position: relative;
+            overflow: clip;
+            margin-top: 40%;
+            margin-left: 0%;
+            box-sizing: border-box;
+            /* border: 10px;
+            border-color: red; */
+        
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            /* background-color: red; */
+        
+        
+        }
+        
+        .carousel3 img {
+        
+            position:absolute;
+           
+        
+            max-width: 100%;
+            height: auto;
+            
+            
+            }
+            .carousel3 button {
+            
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: transparent;
+                border: none;
+                color: red;
+                font-size: 32px;
+                cursor: pointer;
+                
+                }
+            
+                .carousel3 .prev3 {
+                    left:10px;
+            
+                  }
+                  .carousel3 .next3 {
+                    right: 10px;
+                  }
+                  .carousel3 .prev3:hover {
+                    left:10px;
+                    color: yellow;
+            
+                  }
+                  .carousel3 .next3:hover {
+                    right: 10px;
+                    color: yellow;
+                  }
+            
+
+
+
+
+
+
+p {
+    gap: 0;
+   
+}
+h2{
+    margin-top: 4%;
+    font-family: mifuente4;
+    font-size: 0.9em;
+    font-weight: 200;
+ 
+   
+}
+
+h3 {
+    font-family: miFuente3;
+    font-size: 1.2em;
+    font-weight: 200;
+    margin-left: 88%;
+}
+
+.icono{
+    text-decoration: none;
+    color: black;
+
+}
+
+.icono2{
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+    color: black;
+
+}
+.icono3{
+    text-decoration: none;
+    position: relative;
+    font-size: 2em;
+    margin-left: 50%;
+    margin-top: 16%;
+
+    -webkit-text-fill-color:#fafaf5 ;
+    -webkit-text-stroke: 0.4px;
+    -webkit-text-stroke-color: black;
+   
+    
+}
+
+.icono3:hover{
+    position: relative;
+    font-size: 2em;
+    margin-left: 50%;
+    margin-top: 16%;
+    color: black;
+
+    -webkit-text-fill-color: yellow ;
+    -webkit-text-stroke: 0.4px;
+    -webkit-text-stroke-color: red;
+    text-decoration: none;
+    
+}
+.icono2:hover {
+    color: red;
+     transition: .4es ease;
+       }  
+
+
+.icono:hover {
+    color: red;
+     transition: .4es ease;
+       }  
+   
+
+.parrafo{
+   margin-top: -1%;
+    font-family: miFuente2;
+    font-size: 0.9em;
+    font-weight: 200;
+    text-align: left;
+}
+.parrafo2{
+    font-family: miFuente3;
+    font-size: 0.9em;
+    font-weight: 200; 
+    
+}
+.parrafo3{
+    margin-top: -1%;
+     font-family: miFuente5;
+     font-size: 0.9em;
+     font-weight: 200;
+     text-align:left;
+ }
+
+.link{
+    margin-top: -1%;
+     font-family: miFuente2;
+     font-size: 0.9em;
+     font-weight: 200;
+     text-align: justify;
+     text-decoration: underline;
+ }
+
+.tresde:hover{ -webkit-text-fill-color: rgb(158, 14, 241) ;
+    -webkit-text-stroke: 0.8px;
+    -webkit-text-stroke-color: yellow;
+
+}
+.grafico {
+    -webkit-text-fill-color: red ;
+    -webkit-text-stroke: 0.8px;
+    -webkit-text-stroke-color: yellow;
+}
+
+.video:hover {
+    -webkit-text-fill-color: green ;
+    -webkit-text-stroke: 0.8px;
+    -webkit-text-stroke-color: yellow;
+}
+
+.graficocorto {
+    
+    -webkit-text-fill-color: #fafaf5;
+    -webkit-text-stroke: 0.8px;
+    -webkit-text-stroke-color: black;
+    display: none;
+    
+}
+
+.videocorto{
+ 
+    -webkit-text-fill-color: #fafaf5;
+    -webkit-text-stroke: 0.8px;
+    -webkit-text-stroke-color: black;
+    display: none;
+}
+
+.tresdecorto {
+    display:none;
+    -webkit-text-fill-color: #fafaf5;
+    -webkit-text-stroke: 0.8px;
+    -webkit-text-stroke-color: black;
+    display: none;
+
+}
+
+.graficocorto:hover {
+    
+    -webkit-text-fill-color: red;
+    -webkit-text-stroke: 0.3px;
+    -webkit-text-stroke-color: yellow;
+    display: none;
+}
+
+.videocorto:hover{
+ 
+    -webkit-text-fill-color: green;
+    -webkit-text-stroke: 0.3px;
+    -webkit-text-stroke-color: yellow;
+    display: none;
+}
+
+.tresdecorto:hover {
+ 
+    -webkit-text-fill-color: rgb(158, 14, 241);
+    -webkit-text-stroke: 0.8px;
+    -webkit-text-stroke-color: yellow;
+    display: none;
+
+}
+
+.side-area {
+    background-color: blueviolet;
+    grid-area: side-area;
+}
+
+.side-area2 {
+    /* background-color: pink; */
+    grid-area: side-area2;
+} 
+
+.footer {
+    grid-area: footer;
+    position:sticky;
+    width: 95%;
+   
+    bottom: 8%;
+    margin-top:40%;
+   
+    margin-left: 2.5%;
+    /* background-color: red; */
+
+  
+    
+}
+
+
+@media (max-width:500px) {
+
+    .contenedor {
+        grid-template-columns: 100% ;
+        grid-template-rows: 1px  1px 1px;
+        grid-template-areas:
+            "header"
+            "side-area"
+            "main" 
+            "mainuno"
+            "main2"
+            "maindos"
+            "main3"
+            "maintres"
+            "main4"
+            "maincuatro"
+            "footer";
+    }
+
+    .logo{
+        display: none;
+    }
+    .logocorto{
+
+      margin-left: 20%;
+      display:flex;
+      margin-top: 9%;
+  
+      
+    
+    }
+
+
+header nav{
+    margin-top: 14%;
+    justify-content: space-between;
+    word-spacing: 40px;
+    margin-right: 3.5%;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.8px;
+    
+   
+   
+   }
+
+   header nav {
+
+    word-spacing: 40px;
+        margin-right: 8%;
+        margin-top: 10%;
+        width: 40%;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 0.8px;
+        /* background-color: red; */
+    
+    }
+    
+
+.grafico{
+    display: none;}
+
+.video{
+    display: none;
+}
+.tresde{
+    display: none;
+}
+
+.graficocorto{
+    display:inline;
+    margin-left: 20%;
+margin-right: 20%;}
+
+.videocorto{
+    display: inline;
+    margin-right: 10%;
+    margin-right: 15%;
+}
+
+.tresdecorto{
+    display: inline;
+    margin-right: 15%;
+}
+
+.graficocorto:hover{
+    display: flex;}
+
+.videocorto:hover{
+    display: flex;
+}
+
+.tresdecorto:hover{
+    display: flex;
+}
+h1 {
+    margin-top: 15%;
+    display: flex;
+    font-family: miFuente;
+    font-size: 2.8em;
+    font-weight: 200;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.8px;
+    
+}
+
+.main {
+    grid-area: main;
+    position: relative;
+    margin-top: 50%;
+    width: 100%;
+    margin-left: 1%;
+    z-index: 0;
+    /* background-color: aqua; */ 
+      
+}
+   .mainuno{
+    grid-area: mainuno;
+    position: absolute;
+    width: 87%;
+    margin-top: 77%;
+    margin-left: 6%;
+    z-index: 1;
+    
+      
+}
+.main2{
+    grid-area: main2;
+    margin-top: 210%;
+    width: 100%;
+    margin-left: 1%;
+    /* background-color: aqua; */   
+}
+
+.maindos{
+    grid-area: mainuno;
+    position: absolute;
+    width: 87%;
+    margin-top: 190%;
+    margin-left: 6%;
+    z-index: 1;
+  
+      
+} 
+
+.main3{
+    grid-area: main3;
+    /* background-color: aqua;    */
+    margin-top: 410%;
+    width: 100%;
+    height: 10%;
+    margin-left: 1%;
+} 
+
+.maintres{
+    grid-area: mainuno;
+    position: absolute;
+    width: 87%;
+    margin-top: 322%;
+    margin-left: 6%;
+    z-index: 1;
+   
+}
+
+.main4{
+    grid-area: main4;
+    /* background-color: aqua;    */
+    margin-top: 35%;
+    width: 100%;
+    height: 10%;
+    margin-left: 1%;
+}
+.maincuatro{
+    grid-area: maincuatro;
+    position: absolute;
+    width: 87%;
+    margin-top: 534%;
+    margin-left: 6%;
+    z-index: 1;
+   
+}
+
+
+
+
+   
+
+    .carousel {
+        width: 90%;
+        height: 260px;
+        justify-content: center;
+        position: absolute;
+        overflow: clip;
+        bottom: 0;
+        z-index: 2;
+        box-sizing: border-box;
+        background-color: #f5f558;
+     
+     
+    
+    }
+    .carousel img {
+
+        position:absolute;
+        top: 0;
+        left: 0;
+        
+        object-fit: containt !important;
+        max-width: 100%;
+        height: auto;
+        
+        
+        }
+        .carousel button {
+        
+            position: absolute;
+            top: 55%;
+            transform: translateY(-50%);
+            background-color: transparent;
+            border: none;
+            color: red;
+            font-size: 32px;
+            cursor: pointer;
+           
+            width: 0.1%;
+            /* background-color: green; */
+            
+            }
+        
+            .carousel .prev {
+                left:-25px;
+        
+              }
+              .carousel .next {
+                right: -5px;
+              }
+
+          .carousel .prev:hover {
+            left:-25px;
+            color: #f5f558;
+    
+          }
+          .carousel .next:hover {
+            right: -5px;
+            color: #f5f558;
+          }
+        
+   
+    .carousel2 {
+        width: 90%;
+        height: 200px;
+        justify-content: center;
+        position: relative;
+        overflow: clip;
+        margin-top: -140%;
+        margin-left: 0%;
+        box-sizing: border-box;
+        /* background-color: aquamarine; */
+    
+    }
+   
+        .carousel2 button {
+        
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: transparent;
+            border: none;
+            color: red;
+            font-size: 32px;
+            cursor: pointer;
+            width: 0.1%;
+            /* background-color: green; */
+            
+            }
+        
+            .carousel2 .prev2 {
+                left:-25px;
+        
+              }
+              .carousel2 .next2 {
+                right: -5px;
+              }
+              .carousel2 .prev2:hover {
+                left:-25px;
+                color: yellow;
+        
+              }
+              .carousel2 .next2:hover {
+                right: -5px;
+                color: yellow;
+              }
+    .carousel3 {
+        width: 90%;
+        height: 280px;
+        justify-content: center;
+        position: relative;
+        overflow: clip;
+        margin-top: -143%;
+        margin-left: 0%;
+        box-sizing: border-box;
+        border: 10px;
+        border-color: red;
+        /* background-color: aquamarine; */
+    
+    
+    
+    }
+
+    .carousel3 button {
+        
+        position: absolute;
+        top: 55%;
+        transform: translateY(-50%);
+        background-color: transparent;
+        border: none;
+        color: red;
+        font-size: 32px;
+        cursor: pointer;
+        
+        }
+    
+        .carousel3 .prev3 {
+            left:-25px;
+    
+          }
+          .carousel3 .next3 {
+            right: -20px;
+          }
+          .carousel3 .prev3:hover {
+            left:-25px;
+            color: yellow;
+    
+          }
+          .carousel3 .next3:hover {
+            right: -20px;
+            color: yellow;
+          }
+.carousel4 {
+    width: 90%;
+    height: 300px;
+    justify-content: center;
+    position: relative;
+    overflow: clip;
+    margin-top: -345%;
+    margin-left: 0%;
+    box-sizing: border-box;
+    border: 10px;
+    border-color: red;
+
+
+}
+.carousel4 button {
+        
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size: 32px;
+    cursor: pointer;
+    
+    }
+
+    .carousel4 .prev4 {
+        left:-25px;
+
+      }
+      .carousel4 .next4 {
+        right: -5px;
+      }
+      .carousel4 .prev4:hover {
+        left:-25px;
+        color: yellow;
+
+      }
+      .carousel4 .next4:hover {
+        right: -5px;
+        color: yellow;
+      }
+
+   
+    
+
+
+.icono3 {
+    text-decoration: none;
+    position: relative;
+    font-size: 2em;
+    margin-top: -6%;
+
+    -webkit-text-fill-color: #fafaf5;
+    -webkit-text-stroke: 0.4px;
+    -webkit-text-stroke-color: black;
+
+
+}
+.footer {
+    grid-area: footer;
+    width: 100%;
+    bottom: 0%;
+    position: sticky;
+    margin-left: -3.5%;
+    text-decoration: none;
+   /* background-color: red; */
+
+
+
+}
+
+    .icono {
+        text-decoration: none;
+        color: black;
+        text-decoration: underline;
+        color: black;
+        text-align: left;
+
+    }
+
+
+    h3 {
+        font-family: miFuente3;
+        font-size: 1.2em;
+        font-weight: 200;
+        margin-left: 54%;
+        /* margin-top: -6%; */
+        /* position: sticky; */
+    }
+
+    .icono2 {
+
+        margin-top: 1%;
+        font-size: 0.8em;
+        /* text-shadow: blue 1px 1px 1px; */
+        font-family: miFuente;
+        justify-content: end;
+        text-decoration: underline;
+        color: black;
+        white-space: nowrap;
+        padding: 0 6rem;
+        letter-spacing: 1px;
+        animation: move-rtl 23000ms linear infinite;
+    
+    }
+}
+.cursor {
+    position: absolute;
+    transition-duration: 1000ms;
+    transition-timing-function: ease-in;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+    z-index: 100;
+}
+
+@keyframes move-rtl {
+    0%{
+        transform: translateX(700);
+         }
+         100% 
+    {
+            transform: translatex(-700%);
+        }
+    }
