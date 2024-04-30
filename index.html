@@ -41,7 +41,7 @@
 
 <main class="main-content">
 
-<div class="carousel" id="carousel1">
+<div class="carousel" id="carousel">
   
  
   <img  src="imagenes/image3.jpg"  width="100%" alt="image2">
@@ -250,14 +250,14 @@ function updateCarousel3() {
 
 
 window.addEventListener('resize', function() {
-    adjustCarouselHeight('carousel1');
+    adjustCarouselHeight('carousel');
     adjustCarouselHeight('carousel2');
     adjustCarouselHeight('carousel3'); // Include carousel3
 });
 
 // Initial adjustment when the page loads
 window.addEventListener('load', function() {
-    adjustCarouselHeight('carousel1');
+    adjustCarouselHeight('carousel');
     adjustCarouselHeight('carousel2');
     adjustCarouselHeight('carousel3'); // Include carousel3
 });
